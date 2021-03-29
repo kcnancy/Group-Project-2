@@ -16,6 +16,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
+
+    <script src="./index.js"></script>
+
     <title>Your Future</title>
   </head>
   <body>
@@ -45,6 +48,66 @@
           </div>
         </div>
       </div>
+
+      <div class="container-flex">
+        <div class="jumbotron">
+          <h1>Three Card Tarot Reading</h1>
+          <br>
+          <p id="blurb" class="blurb">
+            The three card reading is one of the simplest tarot card spreads.<br /> The card to the left represents events in your past that may have led to the position you are in now. The Tarot card in the center position represents your outlook on your
+            current state of affairs. The card furthest to the right suggests a possible outcome if no action is taken to change the current course. The future is not set in stone &amp; can be changed through action.
+            <br />
+            <br /> Please focus on your question &amp; click the &quot;My Reading&quot; button below when you are ready.
+          </p>
+          <div class="container-flex">
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-3"><button type="button" class="btn btn-primary btn-lg" id="pastPresentFuture" onclick="pastPresentFuture()">My Reading</button></div>
+              <div class="col-md-3">
+                <p>Percentage of Reversals</p>
+                <input class="slider" type="range" min="0" max="50" value="0" onchange="showValue(this.value)" />
+                <span id="range">0</span>%
+              </div>
+              <div class="col-md-3">
+              </div>
+            </div>
+          </div>
+    
+          <div class="container-flex">
+            <div class="row">
+              <div class="col-md-4">
+             
+                  <hr>
+                  <h2>Past</h2>
+                  <div id="img-1"></div>
+                  <div id="info-1"></div>
+           
+              </div>
+              <div class="col-sm-4">
+       
+                  <hr>
+                  <h2>Present</h2>
+                  <div id="img-2"></div>
+                  <div id="info-2"></div>
+        
+              </div>
+              <div class="col-sm-4">
+           
+                  <hr>
+                  <h2>Future</h2>
+                  <div id="img-3"></div>
+                  <div id="info-3"></div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    
+    </html>
+=======
       <div class="row">
         <div class="col-md-12 text-center">
           <header class="header">
@@ -139,3 +202,4 @@
     </div>
   </body>
 </html>
+
