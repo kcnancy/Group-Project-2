@@ -3,6 +3,9 @@ const deck = {};
 let rank = "";
 let suit = "";
 let deckArr = [];
+const exphbs = require("express-handlebars");
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 const cardBack =
   "<img class='img-thumbnail' src='https://www.wopc.co.uk/images/subjects/tarot/rider-waite/pam-roses-lilies-back.jpg'>";
 const meanings = {
